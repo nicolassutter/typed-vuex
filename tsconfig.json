@@ -8,7 +8,8 @@
     ],
     "strict": true,
     "esModuleInterop": true,
-    "allowJs": true
+    "allowJs": true,
+    "outDir": "not-defined"
   },
   "include": [
     "./**/*",
