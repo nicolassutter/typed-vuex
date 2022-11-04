@@ -59,7 +59,7 @@ function indent(count: number, indentSize = 2) {
 
   if (useWatch) {
     const watcher = chokidar.watch(
-      `${storesDir}/**/store.*.js`,
+      `${storesDir}/**/store.*.{js,ts}`,
       {
         ignoreInitial: true
       }
