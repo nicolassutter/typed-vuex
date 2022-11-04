@@ -1,7 +1,11 @@
-Depuis des stores Vuex (js ou ts):
+# Typed Vuex
 
-1. Génération de fichiers de déclaration
-2. Utilisation de ces fichiers pour fusionner tous les stores en un
-3. On peut utiliser le méga store pour typer `commit`, `dispatch` etc...
+⚠️ This should not be used as is.
 
-Note: On créé des fichiers .d.ts pour chaque store au lieu de juste `typeof import('fichier-source.js')` pour éviter les références circulaires.
+From Vuex stores (JS or TS):
+
+1. Generate a declaration file for every store
+2. Use these files to merge every store into one
+3. TODO: Use the single store to type vuex methods like `commit`, `dispatch`, ... As well as type `defineStore` correctly.
+
+The reason we use .d.ts files for each store instead of using the source file like `typeof import('source-store.store.js')`, is to avoid circular references ("xxx references itself...") in larger projects.
